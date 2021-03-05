@@ -1,7 +1,7 @@
 <template>
     <div class="create">
         <input v-model="taskToAdd" type="text" name="" id="">
-        <a @click="addTask" class="button">Ajouter !</a>
+        <a @click="addTask" class="button is-black">Ajouter !</a>
     </div> 
 </template>
 
@@ -29,5 +29,8 @@ export default {
 .create{
     display: flex;
     flex-direction: row;
+}
+.create input,a{
+    margin: 15px;
 }
 </style>

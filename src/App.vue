@@ -10,7 +10,7 @@
 <style>
 
 #app{
-  background-color: yellow;
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,7 +9,7 @@
         <NewToDo @newTask="stockTasks"  />
       
             
-        <ToDoList @delete="suppTask" v-for="(task,index) in listTasks" :key="task" :id="index" :title="task.name" />
+        <ToDoList @delete="delleteTask" v-for="(task,index) in listTasks" :key="task" :id="index" :title="task.name" />
   
     </div>
     
@@ -46,7 +46,7 @@
                 this.listTasks.push({name: info})
                 console.log(this.listTasks)
             },
-            suppTask(data){
+            delleteTask(data){
                 console.log(data)
                 this.listTasks.splice(data, 1)
             }
@@ -61,6 +61,7 @@
     margin: 0 auto;
     padding-top: 50px;
     background-color: white;
+    border-radius: 15px;
 }
 
 
@@ -71,6 +72,9 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px;
+}
+section p,h1{
+    margin: 15px;
 }
 
 

@@ -3,7 +3,7 @@
         <span class="list">
             <input v-model="check" type="checkbox" name="" id="">
             <p :class="{isCheck: check}">{{title}}</p>
-            <a @click="deleteTask(id)" class="button">Supprimer</a>
+            <a @click="deleteTask(id)" class="button is-danger">Supprimer</a>
         </span>
         
 </template>
@@ -45,6 +45,7 @@ export default {
 .isCheck{
     text-decoration-line: line-through;
 }
+
 
 
 </style>
